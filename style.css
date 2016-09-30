@@ -1,0 +1,328 @@
+body {
+	color: #2d2d2d;
+	height: 100%;
+}
+
+p {
+   font-size: 14px;
+   line-height: 2.25;
+   color: #2d2d2d;
+   font-family: 'ralewaylight';
+}
+ 
+h1 {
+	font-size: 4rem;
+	font-family: 'playfair_displayregular';
+}
+h2 {
+	font-size: 3rem;
+}
+h3 {
+	font-size: 1.5rem;
+	font-family: 'playfair_displayregular';
+}
+
+h4 {
+	font-size: 1.5rem;
+	font-family: 'ralewaymedium';
+}
+
+img{
+	height: auto;
+	max-width: 100%;
+}
+/*takes care of floats (instead of clear: both)*/
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/*takes care of the sections*/
+.container {
+	margin: 0 auto;
+	/*max-width: 600px;*/
+	width: 100%;
+}
+
+/*This is about everything in the header*/
+
+header{
+	width: 100%;
+	height: 100px;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img{
+    width: 50%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.cart {
+	float: right;
+}
+
+.cart img{
+    width: 50%;
+    height: auto;
+    margin-top: 25%;
+}
+
+/*This is about everything in the banner*/
+.banner {
+	height: 550px;
+	background: 
+		url("images/banner-girl.png") no-repeat center center, 
+		url("images/flower-bkgd.jpg");
+	background-size: contain;
+	position: relative;
+	background-position-y: 75px, 0px;
+}
+
+.banner-text-container {
+	color: white;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+
+/*This is about everything in the hand-crafter banner */
+.hand-crafted{
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	border-bottom: 1px solid #d7d7d7;
+	padding-bottom: 50px;
+}
+.italic {
+	font-family: 'playfair_displayitalic';
+	font-size: 3.5rem;
+}
+.bold {
+	font-family: 'playfair_displaybold';
+	font-size: 3.5rem;
+}
+
+
+/*this is the most-loved products section divs*/
+.most-loved{
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.most-loved ul{ 
+	margin-top: 50px;
+}
+.most-loved li {
+   width: 25%;
+   text-align: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+.most-loved p {
+	color: #969696;
+}
+
+.most-loved h3{
+	color: #e2574c;
+
+}
+
+.signup{
+	height: 367px;
+	width: 100%;
+	background: url("images/wave-bkgd.jpg");
+	background-position-y: -510px; 
+	position: relative;
+}
+
+.signup-text-container {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.signup span,.signup p{
+	color: white;
+}
+
+form {
+	margin-top:2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup_form {
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: white;
+    padding: 1%;
+}
+
+input[type=email] {
+	width: 28%;
+	font-size: 12px;
+   	font-family: 'ralewaylight';
+   	margin-left: 1%;
+   	border:none;
+}
+
+/*.signup_button*/ 
+button {
+	background-color: #e2574c;
+	border-radius: 50px;
+	border: 1px solid #e2574c;
+	color: white;
+	font-size: 14px;
+    font-family: 'ralewaylight';
+    padding-top: 1%;
+    padding-bottom: 0.8%;
+    margin-right: -9px;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+}
+
+
+
+
+footer {
+	background-color: #242424; 
+	width: 100%;
+	height: 20%;
+	display: block;
+   	margin-left: auto;
+   	margin-right: auto;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.copyright p, a{
+	color: white;
+	line-height: 1.25;
+} 
+
+.address p{
+	color: #969696;
+	line-height: 1.25;
+}
+
+.social {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	list-style: none;
+	padding: 2%;
+}
+
+.social a{
+	color: white;
+	text-decoration: none;
+	text-align: left;
+   	line-height: 1;
+}
+.social a:hover {
+	color: #e2574c;
+}
+
+.fa{
+	color: white;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+/*media here*/
+
+
+/*Below is for the Tablet*/
+@media screen and (min-width: 600px) {  
+.container {
+	margin: 0 auto;
+	min-width: 600px;
+	width: 100%;
+}
+
+p {
+   font-size: 16px;
+}
+
+
+
+/*Below is for the Desktop*/
+@media screen and (min-width: 1240px) {
+
+p {
+   font-size: 16px;
+}
+
+.container {
+	margin: 0 auto;
+	min-width: 1240px;
+	width: 100%;
+}
+.most-loved {    
+	margin-bottom: 40%;
+}
+.most-loved li {
+	height: auto;
+	float: left;
+	display: inline-block;
+	width: 25%;
+    text-align: center;
+}
+
+
+/*.signup-text-container {
+	color: white;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}*/
+
+
+footer {
+	background-color: #242424; 
+	width: 100%;
+	height: 300px;
+
+}
+
+.info {
+	float:left;
+	margin-left: 50px;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+
+.social {
+	display: inline-block;
+	float: right;
+	list-style: none;
+	margin-right: 3%;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.social a{
+	font-size: 16px;
+   	line-height: 2.25;
+}
+
