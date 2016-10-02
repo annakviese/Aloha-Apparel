@@ -1,6 +1,6 @@
 
 ## Aloha Website Part1
-![Alt text](project-01a/documentation/images/aloha-homepage.png)
+![Alt text](https://github.com/annakviese/project-01a/blob/master/documentation/images/aloha-homepage.png?raw=true)
 
 #### About
 This is the homepage for Aloha Apparel Co.
