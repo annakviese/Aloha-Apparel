@@ -110,7 +110,7 @@ header{
 	padding-bottom: 50px;
 }
 .hand-crafted p{
-	width: 50%;
+	width: 80%;
 	text-align: center;
 	display: block;
 	margin-left: auto;
@@ -179,6 +179,7 @@ header{
 
 
 form {
+	width: 100%;
 	margin-top:2%;
     margin-left: auto;
     margin-right: auto;
@@ -188,12 +189,12 @@ form {
     border: 1px solid white;
     border-radius: 50px;
     background-color: white;
-    padding: 1% 0.1%;
+    padding: 1%;
 }
 
 input[type=email] {
-	width: 28%;
-	font-size: 1rem;
+	width: 45%;
+	font-size: 0.8rem;
    	font-family: 'ralewaylight';
    	margin-left: 1%;
    	border:none;
@@ -205,9 +206,10 @@ button {
 	border-radius: 50px;
 	border: 1px solid #e2574c;
 	color: white;
-	font-size: 1rem;
+	font-size: 0.8rem;
     font-family: 'ralewaylight';
-    width: 12%;
+    margin-top: -1%;
+    margin-right: -0.8%;
     padding: 0.8%;
 }
 
@@ -300,9 +302,30 @@ h2 {
 	width: 100%;
 }
 
+.hand-crafted p{
+	width: 50%;
+}
+
 .most-loved li {
 	float: left;
 	display: inline-block;
+}
+
+/* signup section changes*/
+
+.signup p {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input[type=email] {
+	font-size: 1rem;
+	width: 27%;
+}
+
+button {
+	font-size: 1rem;
 }
 
 .info {
@@ -355,9 +378,14 @@ h2 {
 /*Below is for the Desktop*/
 @media screen and (min-width: 1240px) {
 
+.hand-crafted p{
+	width: 45%;
+}
+
 .most-loved li {
 	width: 25%;
 }
 
-
-
+input[type=email] {
+width: 19%;
+}
