@@ -1,6 +1,6 @@
 
 ## Aloha Website Part1
-![Alt text](   )
+![Alt text](project-01a/documentation/images/aloha-homepage.png)
 
 #### About
 This is the homepage for Aloha Apparel Co.
