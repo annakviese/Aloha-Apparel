@@ -2,35 +2,6 @@ body {
 	color: #2d2d2d;
 	height: 100%;
 }
-
-p {
-   font-size: 14px;
-   line-height: 2.25;
-   color: #2d2d2d;
-   font-family: 'ralewaylight';
-}
- 
-h1 {
-	font-size: 4rem;
-	font-family: 'playfair_displayregular';
-}
-h2 {
-	font-size: 3rem;
-}
-h3 {
-	font-size: 1.5rem;
-	font-family: 'playfair_displayregular';
-}
-
-h4 {
-	font-size: 1.5rem;
-	font-family: 'ralewaymedium';
-}
-
-img{
-	height: auto;
-	max-width: 100%;
-}
 /*takes care of floats (instead of clear: both)*/
 .clearfix:after {
   content: '';
@@ -41,9 +12,43 @@ img{
 /*takes care of the sections*/
 .container {
 	margin: 0 auto;
-	/*max-width: 600px;*/
 	width: 100%;
 }
+
+/* this is used in all the long texts as well as pricing and item type */
+p {
+   font-size: 14px;
+   line-height: 2.25;
+   color: #2d2d2d;
+   font-family: 'ralewaylight';
+   padding-top: 1%;
+}
+
+/*main title in the banner*/
+h1 {
+	font-size: 3rem;
+	font-family: 'playfair_displayregular';
+}
+
+/* Clothing item name in the most-loved section*/
+h2 {
+	font-size: 1rem;
+	font-family: 'playfair_displayregular';
+}
+
+/* this is for the NEW COLLECTION in the banner */
+h3 {
+	font-size: 1.5rem;
+	font-family: 'ralewaymedium';
+	padding-bottom: 1%;
+}
+
+
+img{
+	height: auto;
+	max-width: 100%;
+}
+
 
 /*This is about everything in the header*/
 
@@ -77,12 +82,14 @@ header{
 .banner {
 	height: 550px;
 	background: 
+	    linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
 		url("images/banner-girl.png") no-repeat center center, 
 		url("images/flower-bkgd.jpg");
-	background-size: contain;
+	background-size: contain, contain, cover;
 	position: relative;
-	background-position-y: 75px, 0px;
+	background-position-y: 0px, 55px, 0px;
 }
+
 
 .banner-text-container {
 	color: white;
@@ -94,7 +101,7 @@ header{
 }
 
 
-/*This is about everything in the hand-crafter banner */
+/*This is about everything in the hand-crafter section */
 .hand-crafted{
 	text-align: center;
 	margin-top: 60px;
@@ -102,43 +109,53 @@ header{
 	border-bottom: 1px solid #d7d7d7;
 	padding-bottom: 50px;
 }
-.italic {
+.hand-crafted p{
+	width: 50%;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.italictitle {
 	font-family: 'playfair_displayitalic';
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 }
-.bold {
+.boldtitle {
 	font-family: 'playfair_displaybold';
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 }
 
 
-/*this is the most-loved products section divs*/
+
+/*this is the most-loved products section*/
 .most-loved{
 	text-align: center;
 	margin-top: 60px;
-	margin-bottom: 60px;
+	overflow: hidden;
 }
+
 .most-loved ul{ 
 	margin-top: 50px;
 }
 .most-loved li {
-   width: 25%;
+   width: 50%;
    text-align: center;
    display: block;
    margin-left: auto;
    margin-right: auto;
+   margin-bottom: 10%;
 }
-
 
 .most-loved p {
 	color: #969696;
 }
 
-.most-loved h3{
+.most-loved h2{
 	color: #e2574c;
-
 }
 
+/*this is the sign up for updates section*/
 .signup{
 	height: 367px;
 	width: 100%;
@@ -147,6 +164,7 @@ header{
 	position: relative;
 }
 
+/*the text container before the form*/
 .signup-text-container {
 	text-align: center;
 	width: 100%;
@@ -159,6 +177,7 @@ header{
 	color: white;
 }
 
+
 form {
 	margin-top:2%;
     margin-left: auto;
@@ -169,40 +188,38 @@ form {
     border: 1px solid white;
     border-radius: 50px;
     background-color: white;
-    padding: 1%;
+    padding: 1% 0.1%;
 }
 
 input[type=email] {
 	width: 28%;
-	font-size: 12px;
+	font-size: 1rem;
    	font-family: 'ralewaylight';
    	margin-left: 1%;
    	border:none;
 }
 
-/*.signup_button*/ 
+/*.subscribe button*/ 
 button {
 	background-color: #e2574c;
 	border-radius: 50px;
 	border: 1px solid #e2574c;
 	color: white;
-	font-size: 14px;
+	font-size: 1rem;
     font-family: 'ralewaylight';
-    padding-top: 1%;
-    padding-bottom: 0.8%;
-    margin-right: -9px;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
+    width: 12%;
+    padding: 0.8%;
 }
 
 
 
 
+/*this is for the footer */
+
 footer {
 	background-color: #242424; 
 	width: 100%;
-	height: 20%;
-	display: block;
+	height: 250px;
    	margin-left: auto;
    	margin-right: auto;
 	text-align: center;
@@ -210,96 +227,82 @@ footer {
 	padding-bottom: 1%;
 }
 
+.info {
+	margin-top: 10%;
+}
+
+/* copyright and address data */
 .copyright p, a{
 	color: white;
 	line-height: 1.25;
 } 
 
 .address p{
+	margin-top: 1%;
 	color: #969696;
 	line-height: 1.25;
 }
 
+/*social links*/
 .social {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	list-style: none;
 	padding: 2%;
+	margin-top: 1%;
 }
 
-.social a{
-	color: white;
-	text-decoration: none;
-	text-align: left;
-   	line-height: 1;
+.social li {
+	display: inline-block;
 }
-.social a:hover {
+.social a{
+	display: none;
+	visibility: hidden;
+}
+.social li i {
+	display: inline;
+}
+
+.social li:hover i {
 	color: #e2574c;
 }
 
+/*social icons*/
 .fa{
 	color: white;
 	font-size: 16px;
 	margin-right: 10px;
 }
 
-/*media here*/
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
 
 
 /*Below is for the Tablet*/
-@media screen and (min-width: 600px) {  
+@media screen and (min-width: 600px) {
+
+p {
+   font-size: 16px;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
 .container {
 	margin: 0 auto;
 	min-width: 600px;
 	width: 100%;
 }
 
-p {
-   font-size: 16px;
-}
-
-
-
-/*Below is for the Desktop*/
-@media screen and (min-width: 1240px) {
-
-p {
-   font-size: 16px;
-}
-
-.container {
-	margin: 0 auto;
-	min-width: 1240px;
-	width: 100%;
-}
-.most-loved {    
-	margin-bottom: 40%;
-}
 .most-loved li {
-	height: auto;
 	float: left;
 	display: inline-block;
-	width: 25%;
-    text-align: center;
-}
-
-
-/*.signup-text-container {
-	color: white;
-	text-align: center;
-	width: 100%;
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-}*/
-
-
-footer {
-	background-color: #242424; 
-	width: 100%;
-	height: 300px;
-
 }
 
 .info {
@@ -311,18 +314,50 @@ footer {
     margin-top: 3%;
 }
 
-
 .social {
-	display: inline-block;
 	float: right;
 	list-style: none;
-	margin-right: 3%;
+	margin-right: 5%;
 	line-height: 1.5;
 	text-align: left;
 }
-
-.social a{
-	font-size: 16px;
-   	line-height: 2.25;
+.social li {
+	display: block;
 }
+.social a{
+	display: inline-block;
+	visibility: visible;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+   	line-height: 1;
+   	font-size: 1rem;
+}
+
+.social li:hover a, 
+.social li:hover i {
+	color: #e2574c;
+}
+
+/*social icons*/
+.fa{
+	color: white;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+/*Below is for the Desktop*/
+@media screen and (min-width: 1240px) {
+
+.most-loved li {
+	width: 25%;
+}
+
+
 
