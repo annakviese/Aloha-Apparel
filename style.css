@@ -32,11 +32,13 @@ h1 {
 
 /* Clothing item name in the most-loved section*/
 h2 {
+	font-size: 1.3rem;
 	font-family: 'playfair_displayregular';
 }
 
 /* this is for the NEW COLLECTION in the banner */
 h3 {
+	font-size: 1rem;
 	font-family: 'ralewaymedium';
 	padding-bottom: 1%;
 }
