@@ -2,12 +2,6 @@ body {
 	color: #2d2d2d;
 	height: 100%;
 }
-/*takes care of floats (instead of clear: both)*/
-.clearfix:after {
-  content: '';
-  clear: both;
-  display: table;
-}
 
 /*takes care of the sections*/
 .container {
@@ -54,28 +48,63 @@ img{
 
 header{
 	width: 100%;
-	height: 100px;
+	height: 130px;	
+}
+
+header .container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10%;
 }
 
 .logo {
-	float: left;
+	flex: 1 1 50%;
+	align-self: flex-start;
+	order: 1;
 }
 
-.logo img{
-    width: 50%;
-    height: auto;
-    margin-top: 2%;
-    margin-left: 1%;
+.navigation {
+	flex: 1 1 50%; 
+	align-self: center;
+	order: 3;
+	text-align: center;
+	border-top: 1px solid #d7d7d7;
+}
+
+.navigation ul{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.navigation a {
+	color: #e2574c;
+	text-decoration: none;
+}
+
+.navigation li {
+	display: inline-block;
+	font-size: 1.3rem;
+	text-decoration: none;
+	margin-right: 5%;
 }
 
 .cart {
-	float: right;
+	flex: 1 1 50%;
+	align-self: flex-end;
+	order: 2;
+	text-align: right;
+}
+
+
+.logo img{
+    max-width: 170px;
+    height: auto;
+
 }
 
 .cart img{
-    width: 50%;
+    max-width: 75px;
     height: auto;
-    margin-top: 25%;
 }
 
 /*This is about everything in the banner*/
@@ -106,9 +135,8 @@ header{
 	text-align: center;
 	margin-top: 60px;
 	margin-bottom: 60px;
-	border-bottom: 1px solid #d7d7d7;
-	padding-bottom: 50px;
 }
+
 .hand-crafted p{
 	width: 80%;
 	text-align: center;
@@ -126,8 +154,80 @@ header{
 	font-size: 2.5rem;
 }
 
+/***********************************************/
 
+.productline {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
 
+.productline div {
+	min-height: 230px;
+	box-sizing: border-box;
+  	border: 5px solid white;
+}
+
+.productline a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	font-family: 'ralewaymedium';
+}
+
+.mens {
+	display: flex;
+	flex: 0 0 100%;
+	max-width: 100%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+	url("images/mens-category.jpg") no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.trends {
+	display: flex;
+	flex: 1 0 50%;
+	max-width: 50%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+	url("images/trends-category.jpg") no-repeat;
+	background-size: cover;
+}
+
+.glasses {
+	display: flex;
+	flex: 1 0 50%;
+	max-width: 50%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+	url("images/glasses-category.jpg") no-repeat;
+	background-size: cover;
+}
+
+.sale {
+	display: flex;
+	flex: 1 0 50%;
+	max-width: 50%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+	url("images/sale-category.jpg") no-repeat;
+	background-size: cover;
+}
+
+.bags {
+	display: flex;
+	flex: 1 0 50%;
+	max-width: 50%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+	url("images/bags-category.jpg") no-repeat;
+	background-size: cover;
+}
+.womens {
+	display: flex;
+	flex: 1 0 100%;
+	max-width: 100%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+	url("images/womens-category.jpg") no-repeat;
+	background-size: cover;
+}
 /*this is the most-loved products section*/
 .most-loved{
 	text-align: center;
@@ -139,7 +239,7 @@ header{
 	margin-top: 50px;
 }
 .most-loved li {
-   width: 50%;
+   width: 100%;
    text-align: center;
    display: block;
    margin-left: auto;
@@ -217,7 +317,6 @@ button {
 
 
 /*this is for the footer */
-
 footer {
 	background-color: #242424; 
 	width: 100%;
@@ -229,35 +328,43 @@ footer {
 	padding-bottom: 1%;
 }
 
-.info {
-	margin-top: 10%;
+
+footer .container {
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+.copyright {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+ 	flex: 1;
+}
+.social {
+	display: flex;
+  	justify-content: center;
+ 	align-items: center;
+ 	flex: 1;
 }
 
 /* copyright and address data */
-.copyright p, a{
+.copyright a, .copyright p{
 	color: white;
 	line-height: 1.25;
 } 
 
-.address p{
-	margin-top: 1%;
+.copyright span {
 	color: #969696;
 	line-height: 1.25;
 }
 
-/*social links*/
-.social {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	list-style: none;
-	padding: 2%;
-	margin-top: 1%;
-}
-
 .social li {
 	display: inline-block;
-}
+} 
+
 .social a{
 	display: none;
 	visibility: hidden;
@@ -277,19 +384,16 @@ footer {
 	margin-right: 10px;
 }
 
-
-/***************************************************************/
-/***************************************************************/
-/***************************************************************/
-/***************************************************************/
-/***************************************************************/
-
+/*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*Below is for the Tablet*/
 @media screen and (min-width: 600px) {
 
 p {
-   font-size: 16px;
+	font-size: 16px;
 }
 
 h1 {
@@ -303,11 +407,61 @@ h2 {
 .container {
 	margin: 0 auto;
 	min-width: 600px;
-	width: 100%;
 }
 
-.hand-crafted p{
+header .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.logo {
+	flex: 0 1 auto;
+	align-self: flex-start;
+	order:1;
+}
+
+.navigation {
+	flex: 1 1 auto; 
+	align-self: center;
+	order: 2;
+	border:none;
+
+}
+
+.cart {
+	flex: 0 1 auto;
+	align-self: flex-end;
+	order: 3;
+}
+
+.hand-crafted p {
 	width: 50%;
+}
+
+/******************************************/
+.mens {
+	flex: 1 1 50%;
+}
+
+.trends {
+	flex: 1 1 25%;
+}
+
+.glasses {
+	flex: 1 0 25%;
+}
+
+.sale {
+	flex: 1 0 25%;
+}
+
+.bags {
+	flex: 1 0 25%;
+
+}
+.womens {
+	flex: 1 0 50%;
 }
 
 .most-loved li {
@@ -332,25 +486,42 @@ button {
 	font-size: 1rem;
 }
 
-.info {
-	float:left;
-	margin-left: 50px;
-    margin-top: 50px;
-    text-align: left;
-    margin-left: 3%;
-    margin-top: 3%;
+
+/*footer */
+
+footer .container{
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row; 
+	align-items: baseline;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+
+.copyright{
+	text-align: left;
 }
 
 .social {
-	float: right;
+	display: flex;
+  	align-items: stretch;
+  	justify-content: flex-end;
+}
+
+.social ul {
 	list-style: none;
 	margin-right: 5%;
 	line-height: 1.5;
 	text-align: left;
 }
+
 .social li {
 	display: block;
 }
+
+
 .social a{
 	display: inline-block;
 	visibility: visible;
@@ -373,11 +544,10 @@ button {
 	margin-right: 10px;
 }
 
-
-/***************************************************************/
-/***************************************************************/
-/***************************************************************/
-/***************************************************************/
+/*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*Below is for the Desktop*/
 @media screen and (min-width: 1240px) {
