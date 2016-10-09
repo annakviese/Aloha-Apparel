@@ -1,5 +1,3 @@
-//animates navigation slow scroll 
-
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -14,8 +12,6 @@ $(function() {
     }
   });
 
-
-// jQuery for flickity 
   $('.carousel').flickity({
   	// options
 	  cellAlign: 'left',
@@ -24,20 +20,6 @@ $(function() {
 });
 
 
-
-// validates email
-function validateEmail($email) {
-  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-  return emailReg.test( $email );
-}
-
-if( !validateEmail(emailaddress)) { 
-	alert('Please enter valid address');
-	}
-	else{
-	alert('thanks for subscribing!');
-	}
-};
 
 // $('#submit').click(function(){
 //           var email = $('#email').val();
