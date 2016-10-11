@@ -17,20 +17,28 @@ $(function() {
 	  cellAlign: 'left',
 	  contain: true
 	});
+
+  $('#subscribe').click(function(event){
+          event.preventDefault();
+          var email = $('#email').val();
+          var email_validator = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          if (email_validator.test(email)) {
+              alert('Thanks for subscribing');
+          } else {
+              alert('Please enter valid email address!');             
+          }
+      
+  });
+
+   $('#email').click(function(event){
+          event.preventDefault();
+          $('.signup_form').css("box-shadow", "1px 0px 13px 0px rgba(50, 50, 49, 0.97)")
+      
+  });
+
 });
 
 
-
-// $('#submit').click(function(){
-//           var email = $('#email').val();
-//           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//           if re.test(email) {
-//           		prompt ('Thanks for subscribing');
-//           } else {
-//           		alert ('Please enter valid email address!')          		
-//           }
-//       };
-// });
 
 
  
