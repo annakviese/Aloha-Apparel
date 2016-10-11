@@ -250,6 +250,9 @@ header .container {
 	color: #e2574c;
 	text-decoration: none;
 }
+.navigation a:hover {
+	color: #932810;
+}
 
 .navigation li {
 	display: inline-block;
@@ -327,7 +330,8 @@ header .container {
 .productline {
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
+	/*width: 100%;
+	height: 100%;*/
 }
 
 .productline div {
@@ -338,12 +342,17 @@ header .container {
 .productline a {
 	color: white;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-family: 'raleway';
 	font-weight: bold;
     font-style: normal;
 	display: flex;
 	align-items: center;
+	text-shadow: 1px 2px 0px rgba(164, 161, 161, 0.6);
+}
+
+.productline a:hover {
+	color: #e5dba7;
 }
 
 .mens {
@@ -354,7 +363,7 @@ header .container {
 	url("../images/mens-category.jpg") no-repeat;
 	background-size: cover;
 	justify-content: center;
-	background-position: center;
+	background-position: relative;
 }
 
 .trends {
@@ -365,6 +374,7 @@ header .container {
 	url("../images/trends-category.jpg") no-repeat;
 	background-size: cover;
 	justify-content: center;
+	background-position: relative;
 }
 
 .glasses {
@@ -375,6 +385,7 @@ header .container {
 	url("../images/glasses-category.jpg") no-repeat;
 	background-size: cover;
 	justify-content: center;
+	background-position: relative;
 }
 
 .sale {
@@ -385,6 +396,7 @@ header .container {
 	url("../images/sale-category.jpg") no-repeat;
 	background-size: cover;
 	justify-content: center;
+	background-position: relative;
 
 }
 
@@ -396,6 +408,7 @@ header .container {
 	url("../images/bags-category.jpg") no-repeat;
 	background-size: cover;
 	justify-content: center;
+	background-position: relative;
 }
 .womens {
 	display: flex;
@@ -405,6 +418,7 @@ header .container {
 	url("../images/womens-category.jpg") no-repeat;
 	background-size: cover;
 	justify-content: center;
+	background-position: relative;
 }
 /*this is the most-loved products section*/
 .most-loved{
@@ -535,6 +549,7 @@ footer .container {
 .copyright a, .copyright p{
 	color: white;
 	line-height: 1.25;
+	padding-bottom: 1%;
 } 
 
 .copyright span {
@@ -544,6 +559,7 @@ footer .container {
 
 .social li {
 	display: inline-block;
+	padding-bottom: 5%;
 } 
 
 .social a{
