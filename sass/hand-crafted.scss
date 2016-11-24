@@ -4,10 +4,17 @@
 	text-align: center;
 	margin: 60px 0;
 	p{
-		width: 80%;
-		text-align: center;
+		width: 90%;
+		font-size: 1rem;
 		display: block;
 		margin: 0 auto;
+
+		@include tablet {
+			width: 50%;
+		}
+		@include desktop {
+			width: 45%;
+		}
 	}
 }
 .carousel-cell{
