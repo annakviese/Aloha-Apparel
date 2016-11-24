@@ -1,0 +1,92 @@
+/*this is for the footer */
+footer {
+	background-color: #242424; 
+	width: 100%;
+	height: 250px;
+   	margin-left: auto;
+   	margin-right: auto;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+
+footer .container {
+	height: 250px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.copyright {
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+ 	-webkit-box-flex: 1;
+ 	    -ms-flex: 1;
+ 	        flex: 1;
+}
+.social {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+  	-webkit-box-pack: center;
+  	    -ms-flex-pack: center;
+  	        justify-content: center;
+ 	-webkit-box-align: center;
+ 	    -ms-flex-align: center;
+ 	        align-items: center;
+ 	-webkit-box-flex: 1;
+ 	    -ms-flex: 1;
+ 	        flex: 1;
+}
+
+/* copyright and address data */
+.copyright a, .copyright p{
+	color: white;
+	line-height: 1.25;
+	padding-bottom: 1%;
+} 
+
+.copyright span {
+	color: #969696;
+	line-height: 1.25;
+}
+
+.social li {
+	display: inline-block;
+	padding-bottom: 5%;
+} 
+
+.social a{
+	display: none;
+	visibility: hidden;
+}
+.social li i {
+	display: inline;
+}
+
+.social li:hover i {
+	color: #e2574c;
+}
+
+/*social icons*/
+.fa{
+	color: white;
+	font-size: 16px;
+	margin-right: 10px;
+}

@@ -1,0 +1,31 @@
+/******************************
+Typography
+******************************/
+
+$base-font-size: 16px;
+$mobile-font-size: 14px;
+$body-font-family: 'raleway', sans-serif;
+$headings-font-family: 'playfair', serif;
+
+/******************************
+Colours
+******************************/
+
+$body-font-color: #2d2d2d;
+$light-grey: #969696;
+$brand-orange: #e2574c;
+$link-hover: #b64036;
+$border-color: #d7d7d7;
+$dark-grey: #242424;
+
+/******************************
+Screen Sizes
+******************************/
+
+$desktop-width: 1240px;
+$tablet-width: 600px;
+
+
+
+$image-gradient: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
+$text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);

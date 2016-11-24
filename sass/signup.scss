@@ -1,0 +1,76 @@
+
+/*this is the sign up for updates section*/
+.signup{
+	height: 367px;
+	width: 100%;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+	url("../../images/wave-bkgd.jpg") no-repeat center bottom;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+	url("../../images/wave-bkgd.jpg") no-repeat center bottom;
+	background-position-y: -510px; 
+	position: relative;
+}
+
+/*the text container before the form*/
+.signup-text-container {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	        transform: translate(0, -50%);
+}
+
+.signup h4,.signup p{
+	color: white;
+}
+
+.signup p {
+	margin: 0 auto 0 auto;
+	width: 90%;
+}
+
+form {
+	width: 100%;
+	margin-top:2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup_form {
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: white;
+    padding: 1%;
+}
+
+input[type=email] {
+	width: 45%;
+	font-size: 0.8rem;
+   	font-family: 'raleway';
+   	margin-left: 1%;
+   	border:none; 
+   	font-weight: normal;
+    font-style: normal; 	
+}
+
+
+/*.subscribe button*/ 
+button {
+	background-color: #e2574c;
+	border-radius: 50px;
+	border: 1px solid #e2574c;
+	color: white;
+	font-size: 0.8rem;
+    font-family: 'raleway';
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -1%;
+    margin-right: -0.8%;
+    padding: 0.8%;
+    cursor: pointer;
+}
+
+button:hover{
+	background-color: #a02b19;
+}

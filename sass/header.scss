@@ -1,0 +1,112 @@
+/*This is about everything in the header*/
+
+header{
+	width: 95%;	
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+
+    @include desktop{
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+
+    .logo {
+        flex: 1 1 50%;
+        align-self: flex-start;
+        order: 1;
+        padding-bottom: 10px;
+
+        @include tablet {
+            flex-basis: 25%;
+            padding-bottom: none;
+        }
+        @include desktop {
+            flex-basis: 20%;
+        }
+        img { 
+            max-width: 120px;
+            height: auto;
+
+            @include tablet{
+                max-width: 140px;
+        }
+        }
+       
+    }
+    .navigation {
+        flex: 1 1 50%;
+        align-self: center;
+        order: 3;
+        text-align: center;
+        border-top: 1px solid $border-color;
+
+        @include tablet {
+            order: 2;
+            flex-basis: 50%;
+            border-top: none;
+        }
+
+        ul{
+            padding-top: 4%;
+            padding-bottom: 3%;
+            text-align: center;
+            a {
+                color: $brand-orange;
+                text-decoration: none;
+            }
+            &:hover {
+                color: $link-hover;
+            }
+            li {
+                display: inline-block;
+                font-size: 0.9rem;
+                text-decoration: none;
+                margin-right: 4%;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                @include desktop {
+                    font-size: 1rem;
+                }
+            }
+
+        }
+    }
+    .cart {
+	    flex: 1 1 50%;
+	    align-self: flex-end;
+	    order: 2;
+	    text-align: right;
+        padding-bottom: 10px;
+
+        @include tablet {
+            order: 3;
+            flex-basis: 20%;
+            padding-bottom: none;
+        }
+       
+
+        img{
+            max-width: 45px;
+            height: auto;
+
+            @include tablet{
+                max-width: 55px;
+                
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
