@@ -9,3 +9,32 @@
    @content;
  }
 }
+
+/* section title */
+@mixin section-title {
+h4 {
+	font-family: $headings-font-family;
+	font-size: 2.2rem;
+	font-weight: normal;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+h4 span {
+	font-weight: bold;
+    font-style: normal;
+}
+}
+
+@mixin image-grid {
+	display: flex;
+	background-size: cover, cover;
+	justify-content: center;
+	background-position: relative; 
+}
+
+@mixin productline-image {
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+  align-items: center;
+}

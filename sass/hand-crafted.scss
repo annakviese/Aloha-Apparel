@@ -3,6 +3,8 @@
 .hand-crafted{
 	text-align: center;
 	margin: 60px 0;
+	@include section-title;
+	
 	p{
 		width: 90%;
 		font-size: 1rem;

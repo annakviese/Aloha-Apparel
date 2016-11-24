@@ -24,7 +24,7 @@
 .banner-text-container {
 	color: white;
 	text-align: center;
-	width: 100%;
+	width: 95%;
 	position: absolute;
 	flex-direction: column;
 	display: flex;
@@ -34,9 +34,9 @@
 
 /* this is for the NEW COLLECTION in the banner */
 h2 {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	font-family: $body-font-family;
-	padding-bottom: 1%;
+	padding-bottom: 3%;
 	text-transform: uppercase;
 	font-weight: bold;
     font-style: normal;
