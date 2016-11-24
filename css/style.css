@@ -22,82 +22,7 @@
 /*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-/*Below is for the Tablet*/
-@media screen and (min-width: 600px) {
 
-p {
-	font-size: 16px;
-}
-
-h2 {
-	font-size: 1.5rem;
-	
-}
-
-h3 {
-	font-size: 3.5rem;
-}
-
-.container {
-	margin: 0 auto;
-	min-width: 600px;
-}
-
-header {
-	height: 115px;
-}
-
-header .container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-}
-
-.logo {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 1 10%;
-	        flex: 1 1 10%;
-	-ms-flex-item-align: start;
-	    align-self: flex-start;
-	-webkit-box-ordinal-group:2;
-	    -ms-flex-order:1;
-	        order:1;
-}	
-
-.navigation {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 1 50%;
-	        flex: 1 1 50%; 
-	-ms-flex-item-align: center; 
-	    -ms-grid-row-align: center; 
-	    align-self: center;
-	-webkit-box-ordinal-group: 3;
-	    -ms-flex-order: 2;
-	        order: 2;
-	border:none;
-
-}
-
-.cart {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 1 10%;
-	        flex: 1 1 10%;
-	-ms-flex-item-align: end;
-	    align-self: flex-end;
-	-webkit-box-ordinal-group: 4;
-	    -ms-flex-order: 3;
-	        order: 3;
-}
-
-.hand-crafted p {
-	font-size: 1.1rem;
-	width: 50%;
-}
 
 .carousel-cell {
   width: 50%;
@@ -227,7 +152,7 @@ footer .container{
 	margin-right: 10px;
 }
 
-} /*closing tag for the @media */
+
 
 /*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /*/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/

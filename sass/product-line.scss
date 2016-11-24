@@ -4,7 +4,7 @@
 	flex-flow: row wrap;
 		div {
 			box-sizing: border-box;
-			border: 5px solid white;
+			border: 2px solid white;
 
 		.product-name {
 			position: absolute;
@@ -16,11 +16,15 @@
 			a {
 				color: white;
 				text-decoration: none;
-				font-size: 1.5rem;
+				font-size: 1.7rem;
+				text-transform: uppercase;
 				font-family: $body-font-family;
 				font-weight: bold;
 				font-style: normal;
 				text-shadow: $text-shadow;
+				@include tablet {
+					font-size: 2rem;
+				}
 		
 				&:hover {
 					color: #e5dba7;

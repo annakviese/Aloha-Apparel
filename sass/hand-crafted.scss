@@ -2,7 +2,7 @@
 /*This is about everything in the hand-crafter section */
 .hand-crafted{
 	text-align: center;
-	margin: 60px 0;
+	margin: 50px 0;
 	@include section-title;
 	
 	p{
@@ -12,7 +12,7 @@
 		margin: 0 auto;
 
 		@include tablet {
-			width: 50%;
+			width: 70%;
 		}
 		@include desktop {
 			width: 45%;
