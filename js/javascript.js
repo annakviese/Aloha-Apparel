@@ -14,9 +14,11 @@ $(function() {
 
   $('.carousel').flickity({
   	// options
-	  // cellAlign: 'left',
-    
-	  // contain: true
+	  cellAlign: 'left',
+	  contain: true,
+    freeScroll: true,
+    prevNextButtons: false
+    // wrapAround: true
 	});
 
   $('#subscribe').click(function(event){

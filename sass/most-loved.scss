@@ -25,22 +25,19 @@
 				}
 		
 		.carousel {
-			  width: 80%;
+			  width: 90%;
 				position: relative;
     	 	margin: 0 auto;
 				padding-bottom: 5%;
 				img {
 					width: 90%;
 				}
-				
-				.flickity-prev-next-button { 
-						display: none;
-				}
 
 				.carousel-cell {
 					margin-top: 50px;
 					width: 100%;
 					height: auto;
+					counter-increment: carousel-cell;
 
 					@include tablet{
 						width: 50%;
