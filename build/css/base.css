@@ -431,47 +431,73 @@ h3 {
 
 /*this is the sign up for updates section*/
 .signup {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   height: 367px;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/wave-bkgd.jpg") no-repeat center bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/wave-bkgd.jpg") no-repeat center bottom;
   background-position-y: -510px;
-  position: relative; }
-
-/*the text container before the form*/
-.signup-text-container {
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%); }
-
-.signup h4, .signup p {
-  color: white; }
-
-.signup p {
-  margin: 0 auto 0 auto;
-  width: 90%; }
+  /*the text container before the form*/ }
+  .signup h4 {
+    font-family: "playfair", serif;
+    font-size: 2.2rem;
+    font-weight: normal;
+    font-style: italic;
+    padding-bottom: 1rem; }
+  .signup h4 span {
+    font-weight: bold;
+    font-style: normal; }
+  .signup .signup-text-container {
+    text-align: center;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+    .signup .signup-text-container p {
+      width: 90%;
+      font-size: 1rem;
+      display: block;
+      margin: 0 auto; }
+      @media (min-width: 600px) {
+        .signup .signup-text-container p {
+          width: 70%; } }
+      @media (min-width: 1240px) {
+        .signup .signup-text-container p {
+          width: 45%; } }
+    .signup .signup-text-container h4, .signup .signup-text-container p {
+      color: white; }
 
 form {
   width: 100%;
-  margin-top: 2%;
+  margin-top: 5%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative; }
 
 .signup_form {
+  width: 80%;
+  display: block;
+  margin: 2rem auto 0;
+  position: relative;
   border: 1px solid white;
   border-radius: 50px;
   background-color: white;
-  padding: 1%; }
-
-input[type=email] {
-  width: 45%;
-  font-size: 0.8rem;
-  font-family: 'raleway';
-  margin-left: 1%;
-  border: none;
-  font-weight: normal;
-  font-style: normal; }
+  padding: 10px; }
+  .signup_form input[type=email] {
+    padding: .5rem 1.75rem;
+    padding-right: 150px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-family: "raleway", sans-serif;
+    border: none; }
+  @media (min-width: 600px) {
+    .signup_form {
+      width: 55%; } }
+  @media (min-width: 1240px) {
+    .signup_form {
+      width: 45%; } }
 
 /*.subscribe button*/
 button {
@@ -480,16 +506,28 @@ button {
   border: 1px solid #e2574c;
   color: white;
   font-size: 0.8rem;
-  font-family: 'raleway';
-  font-weight: normal;
-  font-style: normal;
-  margin-top: -1%;
-  margin-right: -0.8%;
-  padding: 0.8%;
-  cursor: pointer; }
+  font-family: "raleway", sans-serif;
+  cursor: pointer;
+  padding: .25rem 1.5rem;
+  position: absolute;
+  line-height: 2.3;
+  right: .25rem;
+  top: .16rem; }
+  button:hover {
+    background-color: #b64036; }
 
-button:hover {
-  background-color: #a02b19; }
+.signup p {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+input[type=email] {
+  font-size: 1rem;
+  width: 27%; }
+
+button {
+  font-size: 1rem; }
 
 /*this is for the footer */
 footer {

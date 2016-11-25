@@ -4,20 +4,7 @@
 	text-align: center;
 	margin: 50px 0;
 	@include section-title;
-	
-	p{
-		width: 90%;
-		font-size: 1rem;
-		display: block;
-		margin: 0 auto;
-
-		@include tablet {
-			width: 70%;
-		}
-		@include desktop {
-			width: 45%;
-		}
-	}
+	@include section-description;
 }
 
 

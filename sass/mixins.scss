@@ -25,6 +25,22 @@ h4 span {
 }
 }
 
+@mixin section-description {
+  p{
+		width: 90%;
+		font-size: 1rem;
+		display: block;
+		margin: 0 auto;
+
+		@include tablet {
+			width: 70%;
+		}
+		@include desktop {
+			width: 45%;
+		}
+	}
+}
+
 @mixin image-grid {
 	display: flex;
 	background-size: cover, cover;
