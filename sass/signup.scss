@@ -3,7 +3,7 @@
 .signup{
 	display: flex;
 	align-items: center;
-	height: 367px;
+	height: 355px;
 	width: 100%;
 	background: $image-gradient, url("../../images/wave-bkgd.jpg") no-repeat center bottom;
 	background-position-y: -510px; 
@@ -22,6 +22,7 @@
 }
 
 
+/*email sign up form */
 
 form {
 	width: 100%;
@@ -47,36 +48,32 @@ form {
 			font-size: 0.9rem;
 			font-family: $body-font-family;
 			border:none;  	
-	}
+		}
 
-	@include tablet {
-		width: 55%;
-	}
-	@include desktop {
-		width: 45%;
-	}
-}
-
-
-
-
-/*.subscribe button*/ 
-button {
-	background-color: $brand-orange;
-	border-radius: 50px;
-	border: 1px solid $brand-orange;
-	color: white;
-	font-size: 0.8rem;
-    font-family: $body-font-family;
-    cursor: pointer;
-	padding: .25rem 1.5rem;
-    position: absolute;
-	line-height: 2.3;
-    right: .25rem;
-    top: .16rem;
-		&:hover{
-		background-color: $link-hover;
-
+		@include tablet {
+			width: 55%;
+		}
+		@include desktop {
+			width: 40%;
+		}
+	/*.subscribe button*/ 
+		button {
+			background-color: $brand-orange;
+			border-radius: 50px;
+			border: 1px solid $brand-orange;
+			color: white;
+			font-size: 1rem;
+			font-weight: bold;
+			line-height: 2.3;
+			font-family: $body-font-family;
+			cursor: pointer;
+			padding: .25rem 1.5rem;
+			position: absolute;
+			right: .25rem;
+			top: .19rem;
+				&:hover{
+				background-color: $link-hover;
+				}
 		}
 }
 
@@ -84,19 +81,4 @@ button {
 
 
 
-.signup p {
-	width: 50%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-input[type=email] {
-	font-size: 1rem;
-	width: 27%;
-}
 
-
-
-button {
-	font-size: 1rem;
-}

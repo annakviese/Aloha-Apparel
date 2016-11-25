@@ -435,7 +435,7 @@ h3 {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  height: 367px;
+  height: 355px;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/wave-bkgd.jpg") no-repeat center bottom;
   background-position-y: -510px;
@@ -469,6 +469,7 @@ h3 {
     .signup .signup-text-container h4, .signup .signup-text-container p {
       color: white; }
 
+/*email sign up form */
 form {
   width: 100%;
   margin-top: 5%;
@@ -484,7 +485,8 @@ form {
   border: 1px solid white;
   border-radius: 50px;
   background-color: white;
-  padding: 10px; }
+  padding: 10px;
+  /*.subscribe button*/ }
   .signup_form input[type=email] {
     padding: .5rem 1.75rem;
     padding-right: 150px;
@@ -497,109 +499,132 @@ form {
       width: 55%; } }
   @media (min-width: 1240px) {
     .signup_form {
-      width: 45%; } }
-
-/*.subscribe button*/
-button {
-  background-color: #e2574c;
-  border-radius: 50px;
-  border: 1px solid #e2574c;
-  color: white;
-  font-size: 0.8rem;
-  font-family: "raleway", sans-serif;
-  cursor: pointer;
-  padding: .25rem 1.5rem;
-  position: absolute;
-  line-height: 2.3;
-  right: .25rem;
-  top: .16rem; }
-  button:hover {
-    background-color: #b64036; }
-
-.signup p {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-input[type=email] {
-  font-size: 1rem;
-  width: 27%; }
-
-button {
-  font-size: 1rem; }
+      width: 40%; } }
+  .signup_form button {
+    background-color: #e2574c;
+    border-radius: 50px;
+    border: 1px solid #e2574c;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2.3;
+    font-family: "raleway", sans-serif;
+    cursor: pointer;
+    padding: .25rem 1.5rem;
+    position: absolute;
+    right: .25rem;
+    top: .19rem; }
+    .signup_form button:hover {
+      background-color: #b64036; }
 
 /*this is for the footer */
 footer {
   background-color: #242424;
   width: 100%;
   height: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 1%;
-  padding-bottom: 1%; }
+  margin-top: 8px; }
+  footer .container {
+    padding-top: 10%;
+    height: 245px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    footer .container p, footer .container span, footer .container li {
+      font-family: "playfair", serif;
+      line-height: 1.5; }
+      @media (min-width: 600px) {
+        footer .container p, footer .container span, footer .container li {
+          font-size: 1rem; } }
+    @media (min-width: 600px) {
+      footer .container {
+        width: 95%;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-align: center;
+            align-items: center;
+        margin: 0 2%;
+        padding-top: 0; } }
+  footer .copyright {
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    footer .copyright a, footer .copyright p {
+      color: white;
+      padding-bottom: 1%; }
+    footer .copyright .address {
+      color: #969696;
+      font-size: 0.9rem;
+      padding-top: 2%; }
+      @media (min-width: 600px) {
+        footer .copyright .address {
+          font-size: 1rem; } }
+    @media (min-width: 600px) {
+      footer .copyright {
+        text-align: left; } }
+  footer .social {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 10%; }
+    @media (min-width: 600px) {
+      footer .social {
+        -ms-flex-align: stretch;
+            align-items: stretch;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        padding-top: 0; }
+        footer .social ul {
+          list-style: none;
+          line-height: 1.5;
+          text-align: left; } }
+    footer .social li {
+      display: inline-block;
+      padding-bottom: 5%;
+      /*social icons*/ }
+      @media (min-width: 600px) {
+        footer .social li {
+          display: block; } }
+      footer .social li a {
+        text-decoration: none; }
+      footer .social li a.dismissLbl {
+        font-size: 0;
+        color: white;
+        font-family: "raleway", sans-serif; }
+        @media (min-width: 600px) {
+          footer .social li a.dismissLbl {
+            font-size: 1rem; } }
+      footer .social li i {
+        display: inline; }
+        footer .social li i:hover {
+          color: #e2574c; }
+      footer .social li .fa {
+        color: white;
+        font-size: 1rem;
+        margin-right: 10px; }
 
-footer .container {
-  height: 250px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+/*		
 
-.copyright {
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex: 1;
-  flex: 1; }
+		.social li:hover a, 
+		.social li:hover i {
+			color: #e2574c;
+		}
 
-.social {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex: 1;
-  flex: 1; }
-
-/* copyright and address data */
-.copyright a, .copyright p {
-  color: white;
-  line-height: 1.25;
-  padding-bottom: 1%; }
-
-.copyright span {
-  color: #969696;
-  line-height: 1.25; }
-
-.social li {
-  display: inline-block;
-  padding-bottom: 5%; }
-
-.social a {
-  display: none;
-  visibility: hidden; }
-
-.social li i {
-  display: inline; }
-
-.social li:hover i {
-  color: #e2574c; }
-
-/*social icons*/
-.fa {
-  color: white;
-  font-size: 16px;
-  margin-right: 10px; }
-
+		/*social icons*/
+/*.fa{
+			color: white;
+			font-size: 16px;
+			margin-right: 10px;
+		}*/
 * {
   box-sizing: border-box;
   outline: none; }
