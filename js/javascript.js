@@ -1,3 +1,4 @@
+// email validation function
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -12,6 +13,7 @@ $(function() {
     }
   });
 
+// carousel function
   $('.carousel').flickity({
   	// options
 	  cellAlign: 'left',
@@ -21,6 +23,7 @@ $(function() {
     // wrapAround: true
 	});
 
+//email validation function for the signup 
   $('#subscribe').click(function(event){
           event.preventDefault();
           var email = $('#email').val();
@@ -33,12 +36,30 @@ $(function() {
       
   });
 
+//shadow on focus for the email input 
    $('#email').click(function(event){
           event.preventDefault();
           $('.signup_form').css("box-shadow", "1px 0px 13px 0px rgba(50, 50, 49, 0.97)")
       
   });
 
+ //count bubble for shopping cart items
+    var cartItemsCounter = 0;
+    $('.count-bubble').hide();
+
+    $('input[type="button"]').on('click', function(e) {
+        e.preventDefault();
+
+        cartItemsCounter++;
+
+        if (cartItemsCounter === 0 ) {
+            $('.count-bubble').hide();
+        } else {
+            $('.count-bubble').show();
+            $('.count-bubble').text(cartItemsCounter);
+        }
+
+    });
 });
 
 

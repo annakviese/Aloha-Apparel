@@ -194,7 +194,8 @@ header {
     -ms-flex-order: 2;
         order: 2;
     text-align: right;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    position: relative; }
     @media (min-width: 600px) {
       header .cart {
         -ms-flex-order: 3;
@@ -202,6 +203,14 @@ header {
         -ms-flex-preferred-size: 20%;
             flex-basis: 20%;
         padding-bottom: none; } }
+    header .cart .count-bubble {
+      background-color: #e2574c;
+      padding: 5px;
+      color: white;
+      border-radius: 50%;
+      padding: 1px 6px;
+      position: absolute;
+      right: -4px; }
     header .cart img {
       max-width: 45px;
       height: auto; }
@@ -392,6 +401,8 @@ h3 {
     padding-bottom: 5%; }
     .most-loved .carousel img {
       width: 90%; }
+    .most-loved .carousel .flickity-prev-next-button .arrow {
+      visibility: hidden; }
     .most-loved .carousel .carousel-cell {
       margin-top: 50px;
       width: 100%;
@@ -403,6 +414,20 @@ h3 {
       @media (min-width: 1240px) {
         .most-loved .carousel .carousel-cell {
           width: 25%; } }
+      .most-loved .carousel .carousel-cell input[type="button"] {
+        font-size: 0.75rem;
+        border: 0;
+        border-radius: 25px;
+        font-family: "raleway", sans-serif;
+        font-weight: bold;
+        width: 110px;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+        background-color: #242424;
+        color: white;
+        cursor: pointer; }
+        .most-loved .carousel .carousel-cell input[type="button"]:hover {
+          background-color: #0f87a2; }
 
 /*This is about everything in the hand-crafter section */
 .hand-crafted {
