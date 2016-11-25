@@ -227,7 +227,7 @@ header {
   height: 395px;
   background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/banner-girl.png") no-repeat center center, url("../../images/flower-bkgd.jpg") repeat-x center top;
   background-size: contain, contain, cover;
-  position: relative;
+  /*position: relative;*/
   background-position-y: 0px, 55px, 0px; }
   @media (min-width: 600px) {
     .banner {
@@ -240,11 +240,12 @@ header {
   color: white;
   text-align: center;
   width: 95%;
-  position: absolute;
+  /*position: absolute;*/
   -ms-flex-direction: column;
       flex-direction: column;
   display: -ms-flexbox;
   display: flex;
+  /*display: -webkit-flex;*/
   -ms-flex-pack: center;
       justify-content: center; }
 
@@ -401,6 +402,9 @@ h3 {
     padding-bottom: 5%; }
     .most-loved .carousel img {
       width: 90%; }
+      @media (min-width: 600px) {
+        .most-loved .carousel img {
+          width: 60%; } }
     .most-loved .carousel .flickity-prev-next-button .arrow {
       visibility: hidden; }
     .most-loved .carousel .carousel-cell {
